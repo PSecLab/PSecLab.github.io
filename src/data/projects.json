@@ -1,0 +1,114 @@
+[
+  {
+    "id": "thrust-binary-analysis",
+    "title": "Automated Binary Analysis & Virtualization",
+    "slug": "binary-analysis",
+    "subtitle": "Scalable dynamic binary instrumentation, fast emulation engines, and multi-backend orchestration.",
+    "category": "Systems Security",
+    "status": "Active",
+    "grant": "NSF SaTC #2239104",
+    "icon": "Cpu",
+    "description": "We architect high-performance program analysis frameworks that enable deep inspection, fuzzing, and vulnerability triage on stripped binary executables without source code.",
+    "highlights": [
+      "FastDyn: QEMU-based hypervisor engine with adaptive execution slicing",
+      "xbin: Unified orchestration backend across Ghidra, angr, and Binary Ninja",
+      "Sub-microsecond dynamic instrumentation and memory tracking"
+    ],
+    "tools": [
+      {
+        "name": "FastDyn",
+        "description": "Fast Dynamic Engine plugin for QEMU hypervisors.",
+        "github": "https://github.com/PSecLab/FastDyn",
+        "stars": "120+"
+      },
+      {
+        "name": "xbin",
+        "description": "Cross-framework binary analysis orchestrator.",
+        "github": "https://github.com/PSecLab/xbin",
+        "stars": "85+"
+      }
+    ],
+    "tags": ["QEMU", "Binary Analysis", "DBI", "Instrumentation"]
+  },
+  {
+    "id": "thrust-cps-robotics",
+    "title": "Cyber-Physical & Robotics Protocol Security",
+    "slug": "cps-robotics",
+    "subtitle": "Semantic verification, differential protocol fuzzing, and safety enforcement for autonomous systems.",
+    "category": "CPS Security",
+    "status": "Active",
+    "grant": "DARPA / ONR Cyber Resilience",
+    "icon": "Bot",
+    "description": "Autonomous robots, connected cars, and industrial IoT rely on real-time pub/sub middleware. We develop specialized fuzzers and invariant checkers to protect against state desynchronization and remote hijacking.",
+    "highlights": [
+      "ddsfuzz: Differential protocol fuzzer for DDS and ROS2 middleware",
+      "Discovered 19 zero-day CVEs in automotive and industrial robotics stacks",
+      "Real-time runtime state-machine monitoring for physical safety"
+    ],
+    "tools": [
+      {
+        "name": "ddsfuzz",
+        "description": "Differential fuzzer for DDS middleware in ROS2 & CPS.",
+        "github": "https://github.com/PSecLab/ddsfuzz",
+        "stars": "240+"
+      }
+    ],
+    "tags": ["ROS2", "Robotics", "DDS Protocol", "Automotive Security", "Fuzzing"]
+  },
+  {
+    "id": "thrust-confidential-computing",
+    "title": "Confidential Computing & Hardware Enclaves",
+    "slug": "confidential-computing",
+    "subtitle": "Architecting zero-trust trusted execution environments (TEEs) and memory safety boundaries.",
+    "category": "Hardware & OS",
+    "status": "Active",
+    "grant": "Industry Research Award & NSF",
+    "icon": "ShieldCheck",
+    "description": "Protecting data in use within multi-tenant clouds and edge accelerators. We design fine-grained isolation mechanisms, side-channel mitigations, and verifiable hardware enclave attestation.",
+    "highlights": [
+      "Hardware-enforced compartmentalization for AMD SEV-SNP & Intel TDX",
+      "Sub-millisecond secure context switches without hypervisor trust",
+      "Microarchitectural side-channel defenses against transient execution attacks"
+    ],
+    "tools": [
+      {
+        "name": "EnclaveGuard",
+        "description": "Micro-compartment isolation for cloud-native enclaves.",
+        "github": "https://github.com/PSecLab",
+        "stars": "65+"
+      }
+    ],
+    "tags": ["Confidential Computing", "Intel TDX", "AMD SEV", "Hardware Security"]
+  },
+  {
+    "id": "thrust-embedded-firmware",
+    "title": "Embedded Systems & Firmware Hardening",
+    "slug": "embedded-firmware",
+    "subtitle": "Automated firmware rehosting, binary debloating, and memory compartmentalization for IoT.",
+    "category": "Embedded Systems",
+    "status": "Active",
+    "grant": "NSF SaTC #2140291",
+    "icon": "Zap",
+    "description": "Bare-metal microcontrollers and IoT platforms lack memory protection units (MPU) management. We create static/dynamic tooling to decompose monolithic blobs and retrofit fine-grained CFI.",
+    "highlights": [
+      "Pieces: Monolithic firmware boundary extraction & rewriting",
+      "Slicer: LLVM bitcode slicing for 10x+ accelerated vulnerability discovery",
+      "Peripheral emulation for high-fidelity firmware rehosting"
+    ],
+    "tools": [
+      {
+        "name": "Pieces",
+        "description": "Framework for analyzing, transforming, and hardening firmware binaries.",
+        "github": "https://github.com/PSecLab/Pieces",
+        "stars": "180+"
+      },
+      {
+        "name": "slicer",
+        "description": "Accelerating fuzzing speed for memory bugs by slicing LLVM bitcode.",
+        "github": "https://github.com/PSecLab/slicer",
+        "stars": "95+"
+      }
+    ],
+    "tags": ["Firmware", "LLVM", "Microcontrollers", "IoT", "Binary Rewriting"]
+  }
+]
