@@ -1,0 +1,17 @@
+[
+  {
+    "id": "sample-paper-2025",
+    "title": "Title of Your Published Research Paper",
+    "authors": "Author One, Author Two, Lab Director",
+    "venue": "IEEE S&P 2025",
+    "year": 2025,
+    "award": "Distinguished Paper Award (Optional)",
+    "highlight": true,
+    "tags": ["Systems Security", "Binary Analysis"],
+    "abstract": "Enter paper abstract summary here...",
+    "pdfUrl": "https://example.com/paper.pdf",
+    "codeUrl": "https://github.com/PSecLab/example-repo",
+    "slidesUrl": "https://example.com/slides.pdf",
+    "bibtex": "@inproceedings{author2025title,\n  title={Title of Your Published Research Paper},\n  author={One, Author and Two, Author},\n  booktitle={IEEE Symposium on Security and Privacy},\n  year={2025}\n}"
+  }
+]

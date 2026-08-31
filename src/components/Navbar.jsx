@@ -17,7 +17,6 @@ export default function Navbar() {
     { label: 'Overview', href: '#overview' },
     { label: 'Research', href: '#research' },
     { label: 'Publications', href: '#publications' },
-    { label: 'Software & Tools', href: '#tools' },
     { label: 'Team', href: '#team' },
     { label: 'News', href: '#news' },
     { label: 'Join Us', href: '#join' },

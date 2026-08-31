@@ -1,0 +1,32 @@
+[
+  {
+    "id": "pi-template",
+    "name": "Prof. Jane Doe",
+    "role": "Principal Investigator & Assistant Professor",
+    "category": "pi",
+    "affiliation": "College of IST / CSE",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80",
+    "bio": "Researching systems security, binary analysis, and trustworthy architectures.",
+    "researchInterest": ["Systems Security", "Firmware", "Confidential Computing"],
+    "email": "pi@example.edu",
+    "website": "https://example.com",
+    "googleScholar": "https://scholar.google.com",
+    "github": "https://github.com",
+    "twitter": "https://twitter.com",
+    "linkedin": "https://linkedin.com",
+    "office": "Building Name, Room 123"
+  },
+  {
+    "id": "student-template",
+    "name": "John Smith",
+    "role": "Ph.D. Student",
+    "category": "phd",
+    "affiliation": "Penn State University",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80",
+    "bio": "Working on dynamic binary instrumentation and protocol fuzzing.",
+    "researchInterest": ["Binary Analysis", "Fuzzing"],
+    "email": "student@example.edu",
+    "github": "https://github.com",
+    "googleScholar": "https://scholar.google.com"
+  }
+]

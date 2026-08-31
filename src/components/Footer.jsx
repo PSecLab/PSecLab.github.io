@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Github, Mail, ArrowUp } from 'lucide-react';
+import { Shield, Github, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-950 border-t border-slate-900 pt-16 pb-12 text-slate-400 text-xs sm:text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Col 1: About */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
@@ -21,11 +21,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-slate-400 text-xs sm:text-sm max-w-md leading-relaxed">
-              The Penn Systems & Security Lab (PSecLab) focuses on advancing automated binary analysis, cyber-physical & robotics security, confidential computing enclaves, and firmware hardening.
-            </p>
-            <p className="text-xs text-slate-300 font-mono">
-              College of Information Sciences and Technology / EECS<br />
-              The Pennsylvania State University, University Park, PA
+              Systems & Security Research Group. Advancing research in trustworthy systems, binary security, and high-assurance architectures.
             </p>
           </div>
 
@@ -38,30 +34,16 @@ export default function Footer() {
               <li><a href="#overview" className="hover:text-cyan-300 transition">Overview</a></li>
               <li><a href="#research" className="hover:text-cyan-300 transition">Research Thrusts</a></li>
               <li><a href="#publications" className="hover:text-cyan-300 transition">Publications</a></li>
-              <li><a href="#tools" className="hover:text-cyan-300 transition">Software & Tools</a></li>
-              <li><a href="#team" className="hover:text-cyan-300 transition">People & Alumni</a></li>
-              <li><a href="#news" className="hover:text-cyan-300 transition">Lab News</a></li>
-            </ul>
-          </div>
-
-          {/* Col 3: Research Tools */}
-          <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-300 mb-3">
-              Open-Source Tools
-            </h4>
-            <ul className="space-y-2 text-xs font-mono">
-              <li><a href="https://github.com/PSecLab/FastDyn" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300 transition">FastDyn (QEMU DBI)</a></li>
-              <li><a href="https://github.com/PSecLab/ddsfuzz" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300 transition">ddsfuzz (CPS/ROS2)</a></li>
-              <li><a href="https://github.com/PSecLab/slicer" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300 transition">slicer (LLVM)</a></li>
-              <li><a href="https://github.com/PSecLab/xbin" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300 transition">xbin (Binary Triager)</a></li>
-              <li><a href="https://github.com/PSecLab/Pieces" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300 transition">Pieces (Firmware)</a></li>
+              <li><a href="#team" className="hover:text-cyan-300 transition">Team</a></li>
+              <li><a href="#news" className="hover:text-cyan-300 transition">News</a></li>
+              <li><a href="#join" className="hover:text-cyan-300 transition">Join Us</a></li>
             </ul>
           </div>
         </div>
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-          <p>© {new Date().getFullYear()} PSecLab. Hosted permanently on GitHub Pages.</p>
+          <p>© {new Date().getFullYear()} PSecLab. Hosted on GitHub Pages.</p>
           <div className="flex items-center gap-4">
             <a
               href="https://github.com/PSecLab/PSecLab.github.io"

@@ -1,31 +1,38 @@
 import React from 'react';
-import { BookOpen, ShieldAlert, GitFork, Award } from 'lucide-react';
+import { BookOpen, ShieldCheck, GitFork, Users } from 'lucide-react';
+import papersData from '../data/papers.json';
+import membersData from '../data/members.json';
+import projectsData from '../data/projects.json';
 
 export default function StatsCounter() {
+  const paperCount = Array.isArray(papersData) ? papersData.length : 0;
+  const memberCount = Array.isArray(membersData) ? membersData.length : 0;
+  const projectCount = Array.isArray(projectsData) ? projectsData.length : 0;
+
   const stats = [
     {
       icon: BookOpen,
-      value: "25+",
-      label: "Top-Tier Security Papers",
-      detail: "IEEE S&P, USENIX Sec, ACM CCS, NDSS"
+      value: paperCount > 0 ? `${paperCount}` : "—",
+      label: "Publications",
+      detail: "Conference & journal papers"
     },
     {
-      icon: ShieldAlert,
-      value: "19+",
-      label: "Zero-Day CVEs Found",
-      detail: "In ROS2, DDS, and embedded stacks"
+      icon: ShieldCheck,
+      value: projectCount > 0 ? `${projectCount}` : "—",
+      label: "Research Thrusts",
+      detail: "Active research areas"
+    },
+    {
+      icon: Users,
+      value: memberCount > 0 ? `${memberCount}` : "—",
+      label: "Lab Members",
+      detail: "Faculty, students & alumni"
     },
     {
       icon: GitFork,
-      value: "800+",
-      label: "Open Source Stars",
-      detail: "Across FastDyn, ddsfuzz, slicer, etc."
-    },
-    {
-      icon: Award,
-      value: "$3M+",
-      label: "Active Research Grants",
-      detail: "Supported by NSF, ONR, DARPA, Industry"
+      value: "Open",
+      label: "Open Science",
+      detail: "Artifacts & code on GitHub"
     }
   ];
 

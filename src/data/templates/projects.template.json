@@ -1,0 +1,26 @@
+[
+  {
+    "id": "thrust-sample",
+    "title": "Research Thrust Title",
+    "slug": "thrust-slug",
+    "subtitle": "Short 1-line summary of the thrust.",
+    "category": "Systems Security",
+    "status": "Active",
+    "grant": "NSF SaTC #0000000",
+    "icon": "Cpu",
+    "description": "Paragraph describing the research goals and approach.",
+    "highlights": [
+      "Key contribution or technique 1",
+      "Key contribution or technique 2"
+    ],
+    "tools": [
+      {
+        "name": "ToolName",
+        "description": "Short description of the open-source software tool.",
+        "github": "https://github.com/PSecLab/ToolName",
+        "stars": "100+"
+      }
+    ],
+    "tags": ["Tag1", "Tag2"]
+  }
+]
