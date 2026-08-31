@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "id": "neuroscope25",
+    "title": "NeuroScope: Reverse Engineering Deep Neural Network on Edge Devices using Dynamic Analysis",
+    "authors": "Zhipeng Lu, Arslan Khan, et al.",
+    "venue": "34th USENIX Security Symposium (USENIX Security '25)",
+    "year": 2025,
+    "tags": ["Machine Learning Security", "Edge Devices", "Dynamic Analysis", "Reverse Engineering"],
+    "abstract": "Deep Neural Networks (DNNs) are increasingly deployed on edge devices for latency-critical and privacy-sensitive tasks. NeuroScope proposes an automated dynamic analysis approach to reverse engineer proprietary DNN architectures directly on edge accelerators.",
+    "pdfUrl": "https://arslan8.github.io/publications/neuro.pdf",
+    "bibtex": "@inproceedings{lu2025neuroscope,\n  title={NeuroScope: Reverse Engineering Deep Neural Network on Edge Devices using Dynamic Analysis},\n  author={Lu, Zhipeng and Khan, Arslan and others},\n  booktitle={34th USENIX Security Symposium (USENIX Security 25)},\n  year={2025}\n}"
+  },
+  {
+    "id": "sain24",
+    "title": "SAIN: Improving ICS Attack Detection Sensitivity via State-Aware Invariants",
+    "authors": "Syed Ghazanfar Abbas, Muslum Ozgur Ozmen, Abdulellah Alsaheel, Arslan Khan, and Z. Berkay Celik",
+    "venue": "33rd USENIX Security Symposium (USENIX Security '24)",
+    "year": 2024,
+    "tags": ["ICS Security", "Industrial Control Systems", "Attack Detection", "State Invariants"],
+    "abstract": "Industrial Control Systems (ICS) underpin critical physical infrastructures. SAIN significantly enhances attack detection sensitivity and minimizes false alarms by dynamically synthesizing and monitoring state-aware invariants across multi-stage cyber-physical pipelines.",
+    "pdfUrl": "https://arslan8.github.io/publications/sain.pdf",
+    "bibtex": "@inproceedings{abbas2024sain,\n  title={SAIN: Improving ICS Attack Detection Sensitivity via State-Aware Invariants},\n  author={Abbas, Syed Ghazanfar and Ozmen, Muslum Ozgur and Alsaheel, Abdulellah and Khan, Arslan and Celik, Z. Berkay},\n  booktitle={33rd USENIX Security Symposium (USENIX Security 24)},\n  year={2024}\n}"
+  },
+  {
+    "id": "dhelix24",
+    "title": "D-Helix: A Generic Decompiler Testing Framework Using Symbolic Differentiation",
+    "authors": "Muqi Zou, Arslan Khan, Ruoyu Wu, Han Gao, Antonio Bianchi, and Dave (Jing) Tian",
+    "venue": "33rd USENIX Security Symposium (USENIX Security '24)",
+    "year": 2024,
+    "tags": ["Program Analysis", "Decompilation", "Symbolic Execution", "Testing Frameworks"],
+    "abstract": "Decompilers are critical tools in reverse engineering and vulnerability discovery, yet testing them for correctness and consistency remains challenging. D-Helix introduces a generic decompiler testing framework based on symbolic differentiation to systematically identify semantic bugs in modern decompilers.",
+    "pdfUrl": "https://arslan8.github.io/publications/dhelix.pdf",
+    "bibtex": "@inproceedings{zou2024dhelix,\n  title={D-Helix: A Generic Decompiler Testing Framework Using Symbolic Differentiation},\n  author={Zou, Muqi and Khan, Arslan and Wu, Ruoyu and Gao, Han and Bianchi, Antonio and Tian, Dave Jing},\n  booktitle={33rd USENIX Security Symposium (USENIX Security 24)},\n  year={2024}\n}"
+  },
+  {
+    "id": "crt23",
+    "title": "Low-Cost Privilege Separation with Compile Time Compartmentalization for Embedded Systems",
+    "authors": "Arslan Khan, Dongyan Xu, and Dave Jing Tian",
+    "venue": "44th IEEE Symposium on Security and Privacy (IEEE S&P '23)",
+    "year": 2023,
+    "tags": ["Embedded Systems", "Privilege Separation", "Operating Systems", "Compilers"],
+    "abstract": "Resource-constrained embedded microcontrollers lack hardware virtualization or MMU support. We introduce CRT, a compile-time compartmentalization framework that enforces low-cost privilege separation across embedded OS components and application logic without prohibitive runtime overhead.",
+    "pdfUrl": "https://arslan8.github.io/publications/crt.pdf",
+    "codeUrl": "https://github.com/Arslan8/FreeRTOS",
+    "bibtex": "@inproceedings{khan2023crt,\n  title={Low-Cost Privilege Separation with Compile Time Compartmentalization for Embedded Systems},\n  author={Khan, Arslan and Xu, Dongyan and Tian, Dave Jing},\n  booktitle={2023 IEEE Symposium on Security and Privacy (SP)},\n  pages={1580--1597},\n  year={2023},\n  organization={IEEE}\n}"
+  },
+  {
+    "id": "ec23",
+    "title": "EC: Embedded Systems Compartmentalization via Intra-Kernel Isolation",
+    "authors": "Arslan Khan, Dongyan Xu, and Dave Jing Tian",
+    "venue": "44th IEEE Symposium on Security and Privacy (IEEE S&P '23)",
+    "year": 2023,
+    "tags": ["Embedded Systems", "Intra-Kernel Isolation", "Operating Systems", "Memory Safety"],
+    "abstract": "Modern embedded operating systems (such as FreeRTOS) execute in a monolithic address space where a single memory bug can compromise the entire kernel. EC designs intra-kernel isolation boundaries to compartmentalize critical OS services with negligible performance impact.",
+    "pdfUrl": "https://arslan8.github.io/publications/ec.pdf",
+    "codeUrl": "https://github.com/Arslan8/FreeRTOS",
+    "bibtex": "@inproceedings{khan2023ec,\n  title={EC: Embedded Systems Compartmentalization via Intra-Kernel Isolation},\n  author={Khan, Arslan and Xu, Dongyan and Tian, Dave Jing},\n  booktitle={2023 IEEE Symposium on Security and Privacy (SP)},\n  pages={1562--1579},\n  year={2023},\n  organization={IEEE}\n}"
+  },
+  {
+    "id": "fuzzsgx23",
+    "title": "Fuzzing SGX Enclaves via Host Program Mutations",
+    "authors": "Arslan Khan, Muqi Zou, Kyungtae Kim, Dongyan Xu, Antonio Bianchi, and Dave Jing Tian",
+    "venue": "IEEE 8th European Symposium on Security and Privacy (EuroS&P '23)",
+    "year": 2023,
+    "tags": ["Confidential Computing", "Intel SGX", "Fuzzing", "Enclave Security"],
+    "abstract": "Hardware enclaves (e.g. Intel SGX) protect confidential workloads against untrusted hosts, yet interaction bugs across the enclave boundary often lead to memory corruption. FuzzSGX introduces host program mutation techniques to systematically stress and fuzz SGX interfaces.",
+    "pdfUrl": "https://arslan8.github.io/publications/fuzzsgx.pdf",
+    "bibtex": "@inproceedings{khan2023fuzzsgx,\n  title={Fuzzing SGX Enclaves via Host Program Mutations},\n  author={Khan, Arslan and Zou, Muqi and Kim, Kyungtae and Xu, Dongyan and Bianchi, Antonio and Tian, Dave Jing},\n  booktitle={2023 IEEE European Symposium on Security and Privacy (EuroS&P)},\n  pages={468--483},\n  year={2023},\n  organization={IEEE}\n}"
+  },
+  {
+    "id": "m2mon21",
+    "title": "M2MON: Building an MMIO-based Security Reference Monitor for Unmanned Vehicles",
+    "authors": "Arslan Khan, Hyungsub Kim, Byoungyoung Lee, Dongyan Xu, Antonio Bianchi, and Dave Jing Tian",
+    "venue": "30th USENIX Security Symposium (USENIX Security '21)",
+    "year": 2021,
+    "tags": ["Unmanned Vehicles", "Robotics", "MMIO", "Reference Monitor", "CPS"],
+    "abstract": "Autonomous unmanned vehicles rely on peripheral sensors and actuators via memory-mapped I/O (MMIO). M2MON builds a hardware-assisted reference monitor that inspects MMIO operations in real time, preventing sensor spoofing and physical safety violations.",
+    "pdfUrl": "https://arslan8.github.io/publications/m2mon.pdf",
+    "bibtex": "@inproceedings{khan2021m2mon,\n  title={M2MON: Building an MMIO-based Security Reference Monitor for Unmanned Vehicles},\n  author={Khan, Arslan and Kim, Hyungsub and Lee, Byoungyoung and Xu, Dongyan and Bianchi, Antonio and Tian, Dave Jing},\n  booktitle={30th USENIX Security Symposium (USENIX Security 21)},\n  pages={2825--2842},\n  year={2021}\n}"
+  },
+  {
+    "id": "spectrum21",
+    "title": "Privacy-Preserving Localization using Enclaves",
+    "authors": "Arslan Khan, Joseph I. Choi, Dave Jing Tian, Tyler Ward, Kevin R. B. Butler, Patrick Traynor, John M. Shea, and Tan F. Wong",
+    "venue": "IEEE 12th Annual Ubiquitous Computing, Electronics & Mobile Communication Conference (UEMCON '21)",
+    "year": 2021,
+    "tags": ["Confidential Computing", "Privacy", "Localization", "Enclaves"],
+    "abstract": "Location-based services often compromise user privacy when querying RF localization towers. We propose an enclave-based privacy-preserving protocol that computes location coordinates inside hardware enclaves without revealing raw spectrum observations.",
+    "pdfUrl": "https://arslan8.github.io/publications/spectrum.pdf",
+    "bibtex": "@inproceedings{khan2021privacy,\n  title={Privacy-Preserving Localization using Enclaves},\n  author={Khan, Arslan and Choi, Joseph I. and Tian, Dave Jing and Ward, Tyler and Butler, Kevin R. B. and Traynor, Patrick and Shea, John M. and Wong, Tan F.},\n  booktitle={2021 IEEE 12th Annual Ubiquitous Computing, Electronics & Mobile Communication Conference (UEMCON)},\n  year={2021}\n}"
+  }
+]

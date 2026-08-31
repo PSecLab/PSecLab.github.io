@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "id": "news-2026-08",
+    "date": "Aug 2026",
+    "title": "Teaching CSE 544: Systems Security in Fall 2026",
+    "category": "Teaching",
+    "description": "Prof. Arslan Khan is teaching CSE 544: Systems Security at Penn State in Fall 2026.",
+    "link": "https://arslan8.github.io/courses"
+  },
+  {
+    "id": "news-2025-08",
+    "date": "Aug 2025",
+    "title": "NeuroScope Accepted to USENIX Security '25",
+    "category": "Publication",
+    "description": "Our paper on reverse engineering deep neural networks on edge devices via dynamic analysis (NeuroScope) has been accepted to USENIX Security '25!",
+    "link": "#publications"
+  },
+  {
+    "id": "news-2024-08-papers",
+    "date": "Aug 2024",
+    "title": "Two Papers Accepted to USENIX Security '24 (D-Helix and SAIN)",
+    "category": "Publication",
+    "description": "Two papers have been accepted to the 33rd USENIX Security Symposium: D-Helix (Decompiler Testing Framework) and SAIN (ICS Attack Detection via State-Aware Invariants).",
+    "link": "#publications"
+  },
+  {
+    "id": "news-2024-08-joined",
+    "date": "Aug 2024",
+    "title": "Joined Penn State University as Assistant Professor",
+    "category": "Milestone",
+    "description": "Dr. Arslan Khan has joined the School of EECS / CSE Department at Penn State University and the Institute for Networking and Security Research (INSR) as an Assistant Professor.",
+    "link": "#overview"
+  },
+  {
+    "id": "news-2023-05",
+    "date": "May 2023",
+    "title": "Two Papers on Embedded Compartmentalization Presented at IEEE S&P '23",
+    "category": "Publication",
+    "description": "Presented EC (Intra-Kernel Isolation) and CRT (Compile Time Compartmentalization) for embedded systems at the 44th IEEE Symposium on Security and Privacy (Oakland '23).",
+    "link": "#publications"
+  }
+]

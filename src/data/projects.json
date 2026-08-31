@@ -1,1 +1,104 @@
-[]
+[
+  {
+    "id": "thrust-compartmentalization",
+    "title": "Program & Kernel Compartmentalization",
+    "slug": "compartmentalization",
+    "subtitle": "Language-agnostic automatic program partitioning, intra-kernel isolation, and compile-time privilege separation.",
+    "category": "Operating Systems & Systems Security",
+    "status": "Active",
+    "icon": "ShieldCheck",
+    "description": "We design low-cost, fine-grained compartmentalization and isolation mechanisms for both full operating systems and resource-constrained embedded kernels without prohibitive performance overhead.",
+    "highlights": [
+      "Pieces: Programmable, language-agnostic automatic program compartmentalization framework",
+      "SeRTOS (EC & CRT): Security-Enhanced FreeRTOS with compile-time privilege separation and intra-kernel isolation",
+      "Published at IEEE S&P 2023"
+    ],
+    "tools": [
+      {
+        "name": "Pieces",
+        "description": "Automatic program compartmentalization framework.",
+        "github": "https://github.com/purseclab/Pieces"
+      },
+      {
+        "name": "SeRTOS / FreeRTOS",
+        "description": "Security-Enhanced FreeRTOS with intra-kernel isolation.",
+        "github": "https://github.com/Arslan8/FreeRTOS"
+      }
+    ],
+    "tags": ["Compartmentalization", "FreeRTOS", "Intra-Kernel Isolation", "Privilege Separation"]
+  },
+  {
+    "id": "thrust-cps-embedded",
+    "title": "Embedded, Cyber-Physical & Robotics Security",
+    "slug": "cps-embedded",
+    "subtitle": "Hardware-assisted reference monitors, MMIO security for autonomous vehicles, and ICS attack detection.",
+    "category": "CPS & Embedded Systems",
+    "status": "Active",
+    "icon": "Bot",
+    "description": "Investigating vulnerabilities and building defenses for cyber-physical systems, unmanned aerial/ground vehicles, and industrial control systems (ICS).",
+    "highlights": [
+      "M2MON: MMIO-based hardware reference monitor for unmanned vehicles (USENIX Security '21)",
+      "SAIN: State-aware invariants for ICS attack detection sensitivity (USENIX Security '24)",
+      "Real-time sensor/actuator validation against physical spoofing"
+    ],
+    "tools": [
+      {
+        "name": "M2MON",
+        "description": "MMIO security monitor for unmanned aerial/ground vehicles.",
+        "github": "https://github.com/Arslan8"
+      }
+    ],
+    "tags": ["Unmanned Vehicles", "Robotics", "ICS", "MMIO", "State Invariants"]
+  },
+  {
+    "id": "thrust-confidential-computing",
+    "title": "Confidential Computing & Hardware Enclaves",
+    "slug": "confidential-computing",
+    "subtitle": "Zero-trust enclave architectures, privacy-preserving protocols, and automated enclave fuzzing.",
+    "category": "Hardware & OS Security",
+    "status": "Active",
+    "icon": "Cpu",
+    "description": "Architecting secure execution mechanisms across hardware enclaves (Intel SGX, TEEs) and discovering subtle boundary interaction vulnerabilities.",
+    "highlights": [
+      "FuzzSGX: Fuzzing SGX enclaves via host program mutations (EuroS&P '23)",
+      "Privacy-preserving localization protocols utilizing hardware enclaves (UEMCON '21)",
+      "Host-enclave interface verification"
+    ],
+    "tools": [
+      {
+        "name": "FuzzSGX",
+        "description": "Automated host-mutation fuzzer for Intel SGX enclaves.",
+        "github": "https://github.com/Arslan8"
+      }
+    ],
+    "tags": ["Intel SGX", "Confidential Computing", "Enclave Fuzzing", "Privacy"]
+  },
+  {
+    "id": "thrust-program-analysis",
+    "title": "Program Analysis, Decompilation & Edge AI Security",
+    "slug": "program-analysis",
+    "subtitle": "Symbolic differentiation for decompiler verification and dynamic DNN reverse engineering on edge devices.",
+    "category": "Program Analysis & AI Security",
+    "status": "Active",
+    "icon": "Zap",
+    "description": "Developing principled program analysis techniques to test binary analysis tools and examine neural network architectures deployed on edge hardware.",
+    "highlights": [
+      "D-Helix: Generic decompiler testing framework via symbolic differentiation (USENIX Security '24)",
+      "NeuroScope: Reverse engineering deep neural networks on edge devices (USENIX Security '25)",
+      "Automated semantic equivalence checking across decompiled binaries"
+    ],
+    "tools": [
+      {
+        "name": "D-Helix",
+        "description": "Generic decompiler testing framework using symbolic differentiation.",
+        "github": "https://github.com/Arslan8"
+      },
+      {
+        "name": "NeuroScope",
+        "description": "Dynamic analysis for reverse engineering edge DNN models.",
+        "github": "https://github.com/Arslan8"
+      }
+    ],
+    "tags": ["Decompilation", "Program Analysis", "Edge AI", "Symbolic Execution"]
+  }
+]

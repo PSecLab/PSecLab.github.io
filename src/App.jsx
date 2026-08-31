@@ -14,7 +14,7 @@ import papersData from './data/papers.json';
 import membersData from './data/members.json';
 import projectsData from './data/projects.json';
 
-import { Search, Filter, BookOpen, Users, Sparkles, Code, ShieldCheck, Terminal, Cpu } from 'lucide-react';
+import { Search, Filter, BookOpen, Users, Sparkles, ShieldCheck, Terminal, Cpu } from 'lucide-react';
 
 export default function App() {
   // BibTeX Modal state
@@ -75,7 +75,7 @@ export default function App() {
       <Navbar />
 
       {/* 1. HERO SECTION */}
-      <section id="overview" className="relative min-h-[85vh] flex items-center justify-center pt-28 pb-20 overflow-hidden">
+      <section id="overview" className="relative min-h-[88vh] flex items-center justify-center pt-28 pb-20 overflow-hidden">
         {/* 3D Interactive Three.js Network Canvas */}
         <Hero3D />
 
@@ -87,17 +87,17 @@ export default function App() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono bg-brand-950/80 text-brand-300 border border-brand-700/40 shadow-inner mb-6 backdrop-blur-md">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span>Systems & Security Research Group</span>
+            <span>Penn State Systems & Security Research Group</span>
           </div>
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-tight max-w-5xl mx-auto">
-            Welcome to <span className="text-gradient">PSecLab</span>
+            Penn Systems & <span className="text-gradient">Security Lab</span>
           </h1>
 
           {/* Subtitle */}
           <p className="mt-6 text-base sm:text-xl text-slate-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            Advancing research in systems security, software security, and trustworthy computing architectures.
+            Directed by <strong>Prof. Arslan Khan</strong> at Penn State University (EECS & INSR). Advancing systems security—uncovering critical vulnerabilities and architecting secure mechanisms across <strong>operating systems</strong>, <strong>confidential computing</strong>, and <strong>embedded systems</strong>.
           </p>
 
           {/* CTAs */}
@@ -115,7 +115,15 @@ export default function App() {
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 text-slate-200 hover:text-white text-sm font-semibold transition"
             >
               <ShieldCheck className="w-4 h-4 text-cyan-400" />
-              <span>Research</span>
+              <span>Research Thrusts</span>
+            </a>
+
+            <a
+              href="#team"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 text-slate-200 hover:text-white text-sm font-semibold transition"
+            >
+              <Users className="w-4 h-4 text-emerald-400" />
+              <span>People</span>
             </a>
 
             <a
@@ -140,31 +148,21 @@ export default function App() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono text-cyan-400 bg-cyan-950/50 border border-cyan-800/40 mb-3">
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>Core Focus</span>
+              <span>Research Program</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Research Thrusts
+              Core Research Thrusts
             </h2>
             <p className="text-slate-400 text-sm sm:text-base mt-3 leading-relaxed">
-              Explore our primary research directions and projects.
+              We design principled defenses and automated analysis pipelines to safeguard modern computing infrastructures.
             </p>
           </div>
 
-          {projectsData && projectsData.length > 0 ? (
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-              {projectsData.map((project) => (
-                <ProjectCard key={project.id} project={project} />
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-16 px-4 rounded-2xl bg-slate-900/40 border border-slate-800 text-slate-400 text-sm max-w-2xl mx-auto">
-              <ShieldCheck className="w-8 h-8 text-cyan-400/60 mx-auto mb-3" />
-              <p className="font-semibold text-slate-200 text-base">No research thrusts listed yet</p>
-              <p className="text-xs text-slate-400 mt-1.5">
-                Add research areas and projects in <code className="text-cyan-400 font-mono">src/data/projects.json</code>.
-              </p>
-            </div>
-          )}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+            {projectsData.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -175,72 +173,66 @@ export default function App() {
             <div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono text-brand-400 bg-brand-950/50 border border-brand-800/40 mb-3">
                 <BookOpen className="w-3.5 h-3.5" />
-                <span>Publications</span>
+                <span>Selected Publications</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-                Papers & Artifacts
+                Publications & Papers
               </h2>
               <p className="text-slate-400 text-sm mt-2">
-                Conference and journal papers authored by lab members.
+                Published at top-tier security conferences (IEEE S&P, USENIX Security, EuroS&P).
               </p>
             </div>
 
             {/* Publication Search */}
-            {papersData && papersData.length > 0 && (
-              <div className="relative w-full md:w-80">
-                <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-                <input
-                  type="text"
-                  placeholder="Search papers, authors, topics..."
-                  value={pubSearch}
-                  onChange={(e) => setPubSearch(e.target.value)}
-                  className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition"
-                />
-              </div>
-            )}
+            <div className="relative w-full md:w-80">
+              <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+              <input
+                type="text"
+                placeholder="Search papers, authors, topics..."
+                value={pubSearch}
+                onChange={(e) => setPubSearch(e.target.value)}
+                className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition"
+              />
+            </div>
           </div>
 
           {/* Tags / Filters */}
-          {papersData && papersData.length > 0 && (
-            <div className="flex flex-wrap items-center justify-between gap-4 mb-8 pb-4 border-b border-slate-800/60">
-              <div className="flex flex-wrap items-center gap-1.5">
-                <span className="text-xs text-slate-400 mr-2 flex items-center gap-1">
-                  <Filter className="w-3 h-3" />
-                  <span>Topic:</span>
-                </span>
-                {allTags.map((tag) => (
-                  <button
-                    key={tag}
-                    onClick={() => setSelectedTag(tag)}
-                    className={`px-3 py-1 rounded-lg text-xs font-medium transition ${
-                      selectedTag === tag
-                        ? 'bg-brand-600 text-white font-semibold shadow-md shadow-brand-600/20'
-                        : 'bg-slate-900/80 text-slate-400 hover:text-white hover:bg-slate-800'
-                    }`}
-                  >
-                    {tag}
-                  </button>
-                ))}
-              </div>
-
-              {allYears.length > 1 && (
-                <div className="flex items-center gap-2">
-                  <span className="text-xs text-slate-400">Year:</span>
-                  <select
-                    value={selectedYear}
-                    onChange={(e) => setSelectedYear(e.target.value)}
-                    className="bg-slate-900 border border-slate-800 rounded-lg px-2.5 py-1 text-xs text-slate-300 focus:outline-none focus:border-brand-500"
-                  >
-                    {allYears.map((yr) => (
-                      <option key={yr} value={yr}>
-                        {yr === 'All' ? 'All Years' : yr}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              )}
+          <div className="flex flex-wrap items-center justify-between gap-4 mb-8 pb-4 border-b border-slate-800/60">
+            <div className="flex flex-wrap items-center gap-1.5">
+              <span className="text-xs text-slate-400 mr-2 flex items-center gap-1">
+                <Filter className="w-3 h-3" />
+                <span>Topic:</span>
+              </span>
+              {allTags.map((tag) => (
+                <button
+                  key={tag}
+                  onClick={() => setSelectedTag(tag)}
+                  className={`px-3 py-1 rounded-lg text-xs font-medium transition ${
+                    selectedTag === tag
+                      ? 'bg-brand-600 text-white font-semibold shadow-md shadow-brand-600/20'
+                      : 'bg-slate-900/80 text-slate-400 hover:text-white hover:bg-slate-800'
+                  }`}
+                >
+                  {tag}
+                </button>
+              ))}
             </div>
-          )}
+
+            <div className="flex items-center gap-2">
+              <span className="text-xs text-slate-400">Year:</span>
+              <select
+                value={selectedYear}
+                onChange={(e) => setSelectedYear(e.target.value)}
+                className="bg-slate-900 border border-slate-800 rounded-lg px-2.5 py-1 text-xs text-slate-300 focus:outline-none focus:border-brand-500"
+              >
+                {allYears.map((yr) => (
+                  <option key={yr} value={yr}>
+                    {yr === 'All' ? 'All Years' : yr}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
 
           {/* Paper List */}
           {filteredPapers.length > 0 ? (
@@ -254,12 +246,14 @@ export default function App() {
               ))}
             </div>
           ) : (
-            <div className="text-center py-16 px-4 rounded-2xl bg-slate-900/40 border border-slate-800 text-slate-400 text-sm max-w-2xl mx-auto">
-              <BookOpen className="w-8 h-8 text-brand-400/60 mx-auto mb-3" />
-              <p className="font-semibold text-slate-200 text-base">No publications listed yet</p>
-              <p className="text-xs text-slate-400 mt-1.5">
-                Add papers and BibTeX citations in <code className="text-brand-400 font-mono">src/data/papers.json</code>.
-              </p>
+            <div className="text-center py-16 bg-slate-900/40 rounded-2xl border border-slate-800">
+              <p className="text-slate-400 text-sm">No publications matching your search criteria.</p>
+              <button
+                onClick={() => { setPubSearch(''); setSelectedTag('All'); setSelectedYear('All'); }}
+                className="mt-3 text-xs text-brand-400 hover:underline"
+              >
+                Reset all filters
+              </button>
             </div>
           )}
         </div>
@@ -272,58 +266,46 @@ export default function App() {
             <div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono text-emerald-400 bg-emerald-950/50 border border-emerald-800/40 mb-3">
                 <Users className="w-3.5 h-3.5" />
-                <span>Members</span>
+                <span>People</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-                Lab Team & Members
+                Lab Members & Alumni
               </h2>
               <p className="text-slate-400 text-sm mt-2">
-                Faculty, researchers, students, and alumni.
+                Faculty, graduate researchers, and alumni of PSecLab.
               </p>
             </div>
 
             {/* Category tabs */}
-            {membersData && membersData.length > 0 && (
-              <div className="flex flex-wrap items-center gap-1.5 bg-slate-900 p-1.5 rounded-xl border border-slate-800">
-                {[
-                  { label: 'All', value: 'all' },
-                  { label: 'Faculty / PI', value: 'pi' },
-                  { label: 'Ph.D. Students', value: 'phd' },
-                  { label: 'MS / Undergrads', value: 'ms_bs' },
-                  { label: 'Alumni', value: 'alumni' }
-                ].map((tab) => (
-                  <button
-                    key={tab.value}
-                    onClick={() => setTeamCategory(tab.value)}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-medium transition ${
-                      teamCategory === tab.value
-                        ? 'bg-brand-600 text-white font-semibold'
-                        : 'text-slate-400 hover:text-white'
-                    }`}
-                  >
-                    {tab.label}
-                  </button>
-                ))}
-              </div>
-            )}
+            <div className="flex flex-wrap items-center gap-1.5 bg-slate-900 p-1.5 rounded-xl border border-slate-800">
+              {[
+                { label: 'All', value: 'all' },
+                { label: 'Faculty / PI', value: 'pi' },
+                { label: 'Ph.D. & D.Eng.', value: 'phd' },
+                { label: 'Undergrads / MS', value: 'ms_bs' },
+                { label: 'Alumni', value: 'alumni' }
+              ].map((tab) => (
+                <button
+                  key={tab.value}
+                  onClick={() => setTeamCategory(tab.value)}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-medium transition ${
+                    teamCategory === tab.value
+                      ? 'bg-brand-600 text-white font-semibold'
+                      : 'text-slate-400 hover:text-white'
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Members Grid */}
-          {filteredMembers.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredMembers.map((member) => (
-                <MemberCard key={member.id} member={member} />
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-16 px-4 rounded-2xl bg-slate-900/40 border border-slate-800 text-slate-400 text-sm max-w-2xl mx-auto">
-              <Users className="w-8 h-8 text-emerald-400/60 mx-auto mb-3" />
-              <p className="font-semibold text-slate-200 text-base">No team members listed yet</p>
-              <p className="text-xs text-slate-400 mt-1.5">
-                Add PI, students, and researchers in <code className="text-emerald-400 font-mono">src/data/members.json</code>.
-              </p>
-            </div>
-          )}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredMembers.map((member) => (
+              <MemberCard key={member.id} member={member} />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -336,10 +318,10 @@ export default function App() {
               <span>Announcements</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Lab News & Updates
+              Recent News & Updates
             </h2>
             <p className="text-slate-400 text-sm sm:text-base mt-3 leading-relaxed">
-              Recent news, milestones, and announcements.
+              Paper acceptances, course announcements, and group milestones.
             </p>
           </div>
 

@@ -1,1 +1,156 @@
-[]
+[
+  {
+    "id": "arslan-khan",
+    "name": "Prof. Arslan Khan",
+    "role": "Principal Investigator & Assistant Professor",
+    "category": "pi",
+    "affiliation": "Pennsylvania State University • EECS / CSE & INSR",
+    "avatar": "https://arslan8.github.io/assets/img/cover.jpeg",
+    "bio": "Assistant Professor in the CSE Department at Penn State and member of the Institute for Networking and Security Research (INSR). Research focuses on systems security, confidential computing, operating systems, and resource-constrained embedded systems (automotive, ICS, robotics).",
+    "researchInterest": ["Systems Security", "Operating Systems", "Confidential Computing", "Embedded & IoT Security"],
+    "email": "arslankhan@psu.edu",
+    "phone": "+1 (814)-856-1042",
+    "office": "W359 Westgate Building, University Park, PA 16802",
+    "website": "https://arslan8.github.io/",
+    "googleScholar": "https://scholar.google.com/citations?user=arslan8",
+    "github": "https://github.com/Arslan8",
+    "twitter": "https://twitter.com/Arslan0o0",
+    "linkedin": "https://www.linkedin.com/in/arslankhan52/"
+  },
+  {
+    "id": "muhammad-hammad-bashir",
+    "name": "Muhammad Hammad Bashir",
+    "role": "Ph.D. Student",
+    "category": "phd",
+    "affiliation": "Penn State University",
+    "avatar": "https://ui-avatars.com/api/?name=Muhammad+Hammad+Bashir&background=0f172a&color=38bdf8&size=200",
+    "bio": "Ph.D. researcher in systems security and automated program analysis.",
+    "researchInterest": ["Systems Security", "Program Analysis"],
+    "website": "https://muhammadhammad001.github.io/"
+  },
+  {
+    "id": "sagor-sikdar",
+    "name": "Sagor Sikdar",
+    "role": "Ph.D. Student",
+    "category": "phd",
+    "affiliation": "Penn State University (Co-Advised with Dr. Taegyu Kim)",
+    "avatar": "https://ui-avatars.com/api/?name=Sagor+Sikdar&background=0f172a&color=38bdf8&size=200",
+    "bio": "Ph.D. researcher in embedded systems and cyber-physical security.",
+    "researchInterest": ["Embedded Systems", "Cyber-Physical Security"]
+  },
+  {
+    "id": "changyul-lee",
+    "name": "Changyul Lee",
+    "role": "Ph.D. Student",
+    "category": "phd",
+    "affiliation": "Penn State University (Co-Advised with Dr. Taegyu Kim)",
+    "avatar": "https://ui-avatars.com/api/?name=Changyul+Lee&background=0f172a&color=38bdf8&size=200",
+    "bio": "Ph.D. researcher in systems security and trusted execution environments.",
+    "researchInterest": ["Systems Security", "Hardware Isolation"],
+    "website": "https://blog.serendipia.pe.kr/"
+  },
+  {
+    "id": "colin-smith",
+    "name": "Colin Smith",
+    "role": "Ph.D. Student",
+    "category": "phd",
+    "affiliation": "Penn State University",
+    "avatar": "https://ui-avatars.com/api/?name=Colin+Smith&background=0f172a&color=38bdf8&size=200",
+    "bio": "Ph.D. researcher in software security and binary analysis.",
+    "researchInterest": ["Binary Analysis", "Vulnerability Discovery"]
+  },
+  {
+    "id": "muhammad-huzaifa",
+    "name": "Muhammad Huzaifa",
+    "role": "Ph.D. Student",
+    "category": "phd",
+    "affiliation": "Penn State University",
+    "avatar": "https://ui-avatars.com/api/?name=Muhammad+Huzaifa&background=0f172a&color=38bdf8&size=200",
+    "bio": "Ph.D. researcher focusing on operating systems and enclave defenses.",
+    "researchInterest": ["OS Security", "Confidential Computing"]
+  },
+  {
+    "id": "zargham-ali",
+    "name": "Zargham Ali",
+    "role": "Ph.D. Student",
+    "category": "phd",
+    "affiliation": "Penn State University",
+    "avatar": "https://ui-avatars.com/api/?name=Zargham+Ali&background=0f172a&color=38bdf8&size=200",
+    "bio": "Ph.D. researcher in CPS and embedded security.",
+    "researchInterest": ["Embedded Systems", "Robotics Security"]
+  },
+  {
+    "id": "md-nazmul-anonto",
+    "name": "Md Nazmul Anonto",
+    "role": "Ph.D. Student",
+    "category": "phd",
+    "affiliation": "Penn State University",
+    "avatar": "https://ui-avatars.com/api/?name=Md+Nazmul+Anonto&background=0f172a&color=38bdf8&size=200",
+    "bio": "Ph.D. researcher in systems security and compile-time isolation.",
+    "researchInterest": ["Systems Security", "Compilers"]
+  },
+  {
+    "id": "danielle-daniel",
+    "name": "Danielle L. Daniel",
+    "role": "D.Eng. Researcher",
+    "category": "phd",
+    "affiliation": "Penn State University • Currently at United States Air Force",
+    "avatar": "https://ui-avatars.com/api/?name=Danielle+Daniel&background=0f172a&color=38bdf8&size=200",
+    "bio": "Doctor of Engineering researcher. Currently with the United States Air Force.",
+    "researchInterest": ["Defense Systems", "Resilient Architectures"]
+  },
+  {
+    "id": "tambre-thomas",
+    "name": "Tambre Thomas",
+    "role": "D.Eng. Student",
+    "category": "phd",
+    "affiliation": "Penn State University",
+    "avatar": "https://ui-avatars.com/api/?name=Tambre+Thomas&background=0f172a&color=38bdf8&size=200",
+    "bio": "D.Eng. student researching high-assurance computing systems.",
+    "researchInterest": ["Secure Systems", "Engineering Security"]
+  },
+  {
+    "id": "evan-english",
+    "name": "Evan English",
+    "role": "B.S. Researcher",
+    "category": "ms_bs",
+    "affiliation": "Penn State / Purdue (Co-Advised with Dr. Dongyan Xu)",
+    "avatar": "https://ui-avatars.com/api/?name=Evan+English&background=0f172a&color=38bdf8&size=200",
+    "bio": "Undergraduate researcher in systems security.",
+    "researchInterest": ["Systems Security", "Embedded Devices"]
+  },
+  {
+    "id": "seongjin-kim",
+    "name": "Seongjin Kim",
+    "role": "B.S. Alumni",
+    "category": "alumni",
+    "affiliation": "Co-Advised with Dr. Taegyu Kim",
+    "currentRole": "Security Researcher at Theori",
+    "avatar": "https://ui-avatars.com/api/?name=Seongjin+Kim&background=0f172a&color=38bdf8&size=200",
+    "bio": "Undergraduate researcher in systems security. Now security researcher at Theori.",
+    "researchInterest": ["Binary Analysis", "Exploitation"]
+  },
+  {
+    "id": "nimai-patel",
+    "name": "Nimai Patel",
+    "role": "M.S. Alumni",
+    "category": "alumni",
+    "affiliation": "Penn State / Purdue",
+    "currentRole": "Software Engineer at Lucid Motors",
+    "avatar": "https://ui-avatars.com/api/?name=Nimai+Patel&background=0f172a&color=38bdf8&size=200",
+    "bio": "M.S. researcher in automotive & embedded security. Now at Lucid Motors.",
+    "researchInterest": ["Automotive Security", "Embedded Systems"]
+  },
+  {
+    "id": "michael-rooney",
+    "name": "Michael P. Rooney",
+    "role": "M.S. Alumni",
+    "category": "alumni",
+    "affiliation": "Co-Advised with Dr. Dongyan Xu",
+    "currentRole": "Systems Researcher",
+    "avatar": "https://ui-avatars.com/api/?name=Michael+Rooney&background=0f172a&color=38bdf8&size=200",
+    "bio": "M.S. researcher in systems and cloud security.",
+    "researchInterest": ["Systems Security", "Virtualization"],
+    "website": "https://michaelprooney.github.io/"
+  }
+]
